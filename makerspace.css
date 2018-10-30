@@ -1,0 +1,334 @@
+/* General styles
+-------------------------------------------------- */
+body {
+   margin:0
+   padding: 0 0 40px 0; /* zero padding except 40 pixels on bottom */
+}
+.navbar-wrapper {
+   margin:0;
+}
+.container {
+   margin-top: 0;
+}
+
+* {
+margin:0;
+padding:0;
+}
+
+.iconFont{
+	font-family: 'Varela Round', sans-serif;
+	color:#002533;
+	text-shadow:none;
+}
+
+.iconFont p{
+	font-family: 'Varela Round', sans-serif;
+	color:#fff;
+	text-shadow:none;
+}
+.pageText{
+	font-size: 2em;
+	font-family: 'Varela Round', sans-serif;
+	color:#002533;
+	text-decoration:none;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+body {
+  /* Margin bottom by footer height */
+	margin-top:0rem;
+	margin-bottom:0rem;
+    padding-top:0rem;
+	background-color:#fff;
+
+}
+
+
+/* Navbar styles
+-------------------------------------------------- */
+#MSlogo{
+	margin:0;
+	max-height:50%;
+}
+
+.bg-dark-custom{
+	margin:0;
+	padding:0;
+    background-color:rgba(255, 255, 255, 0.5);
+}
+
+
+
+.lc-custom{
+	background-color: #015581;
+	margin:0 .5%;
+	padding-top:4%;
+	min-width:16.7%;
+	max-height:50%;
+	text-align:center;
+	vertical-align:center;
+	hyphens:auto;
+}
+.navbar-toggler-custom{
+	background-color:#015581;
+}
+
+
+/* Jumbotron styles
+-------------------------------------------------- */
+.jtron-custom{
+  	background-image: url('images/lasercutbuttonsA.jpg') no-repeat center center fixed; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+.headerPic{
+    left: 0;
+    top: 0;
+    width: 100%;
+	min-height:50rem;
+	margin:0;
+	padding:0;
+} 
+.updatesPic{
+    left: 0;
+    top: 0;
+    width: 100%;
+	height:50%;
+}
+
+/* Centered text */
+.pgtitle {
+	position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 20%;
+    left: 0;
+	background-color:rgba(170, 183, 52, 0.5); 
+	text-align:center; 
+	margin: auto; 
+	font-size: 2em;
+	font-family: 'Varela Round', sans-serif;
+	color:#fff;
+}
+
+
+#lgeHeader{
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+
+
+/* footer styles
+-------------------------------------------------- */
+
+.footer-custom{
+	font-family: 'Varela Round', sans-serif;
+	text-shadow:none;
+	color:#faf8eb;
+	background-color:#6a747d;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: auto;
+  line-height: 30px; /* Vertically center the text there */
+	color:#faf8eb;
+}
+
+
+/* Custom page CSS
+-------------------------------------------------- */
+/* Not required for template or sticky footer method. */
+
+body > .container {
+	margin:0px;
+	padding: 0px;
+}
+
+.footer > .container {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+code {
+  font-size: 80%;
+}
+
+/*HOME PAGE
+=======================================*/
+.welcomeText{
+	background-color:rgba(170, 183, 52, 0.5); 
+	text-align:center; 
+	margin: 0px 10%; 
+	color:#015581;
+	font-size: 2em;
+	font-weight:bold;
+	font-family: 'Varela Round', sans-serif;
+	text-shadow:none;
+}
+
+/*EVENTS PAGE
+=======================================*/
+
+.my-deck{
+	margin-bottom: 5%;
+}
+
+.my-row{
+	height: auto;
+    margin-left: auto;
+    margin-right: auto;
+	margin-bottom: 2%;
+    width: 100%;
+	border: 6px solid #015581;
+	border-radius: 25px;
+	padding:0.5em;
+}
+.my-colL{
+	background-color:#4287ae;
+	color:#D7E5EE;
+	text-align:center;
+	vertical-align:middle;
+	font-size:2em;
+	border-radius:25px;
+	padding:2em;
+}
+
+.my-colR{
+	background-color:#fff;
+	padding:2em;
+}
+
+/*EQUIPMENT PAGE
+=======================================*/
+.btn-dark-my{
+	background-color:#4287ae;
+	color:#fff;
+}
+
+.btn:hover {
+  color: #b32018;
+}
+
+
+
+
+/*UPDATES PAGE
+=======================================*/
+
+/*css news ticker from https://codepen.io/lewismcarey/pen/GJZVoG
+*/
+
+* {
+  box-sizing: border-box;
+}
+@-webkit-keyframes ticker {
+  0% {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    visibility: visible;
+  }
+  100% {
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+  }
+}
+@keyframes ticker {
+  0% {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    visibility: visible;
+  }
+  100% {
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+  }
+}
+.ticker-wrap {
+  position: fixed;
+  bottom: 50%;
+  width: 100%;
+  overflow: hidden;
+  height: 100px;
+  background-color: #002533;
+  padding-left: 100%;
+  box-sizing: content-box;
+}
+.ticker-wrap .ticker {
+  display: inline-block;
+  height: 4rem;
+  line-height: 4rem;
+  white-space: nowrap;
+  padding-right: 100%;
+  box-sizing: content-box;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-name: ticker;
+  animation-name: ticker;
+  -webkit-animation-duration: 30s;
+  animation-duration: 30s;
+}
+.ticker-wrap .ticker__item {
+  display: inline-block;
+  padding: 2rem 2rem;
+  font-size: 4em;
+  color:#fff;
+}
+
+/*moves ticker up for various devices
+=======================================*/
+
+/*iPhoneX,iPhone6/7/8*/
+@media screen and (width: 375px) {
+.ticker-wrap {
+  bottom: 53%;
+  }
+  
+.headerPic{
+	min-height:23rem;
+} 
+}
+
+/*pixel,pixel2L,iPhone6/7/8 plus*/
+@media screen and (max-width: 414px){
+.ticker-wrap {
+  bottom: 56%;
+  }
+.headerPic{
+	min-height:23rem;
+} 
+}
+
+/*galaxyS5,iPhone5/SE*/
+
+@media screen and (max-width: 360px){
+.ticker-wrap {
+  bottom:50%;
+  }
+.headerPic{
+	min-height:23rem;
+} 
+}
+
+
+@media screen and (width: 320px){
+.ticker-wrap {
+  bottom:45%;
+  }
+.headerPic{
+	min-height:23rem;
+} 
+}
+

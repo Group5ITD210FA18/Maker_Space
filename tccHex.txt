@@ -1,0 +1,16 @@
+marine blue #015581
+light marine blue #4287AE
+lightest marine blue #D7E5EE
+pea green #AAB734 R170 G183 B52
+light pea green #D0D696
+lightest pea green #EBEED3
+red #B32018
+sky blue #83D1E5
+light sky blue #C1E7F2
+lightest sky blue #E6F5FA
+tan #F8F2D8
+light tan #FAF8EB
+lightest tan #FDFCF7
+steel grey #6A747D
+light steel grey #ADB4BA
+lightest steel grey #DADEE1
