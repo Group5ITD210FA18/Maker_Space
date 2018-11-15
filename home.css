@@ -1,97 +1,71 @@
-/* GLOBAL STYLES
--------------------------------------------------- */
-/* Padding below the footer and lighter body text */
+/* GLOBAL STYLES*/
 
+div.contacts {
+  border: 1px solid black;
+  color: black;
+}
 body {
-  color: white;
+  max-width: 1366px ;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 /*navigation styles*/
 header {
-	background-color:#002533;
-
+	background-color:#003A5C;
+  width: 100%;
 }
-
- p a {
+p a {
 	color: white;
 }
-
 .navbar a {
 	color: white;
 }
 .navbar a:hover {
-	color: #e36d1b;
+	color: #AAAD00;
 }
 .navbar a:active {
-  color:#e36d1b;
+  color:#AAAD00;
 }
-.dropbtn {
-    background-color: #002533;
-    color: white;
-    padding: 16px;
-    font-size: 16px;
-    border: none;
+.navbar h2 {
+  color: white;
 }
-
-.dropdown {
-    position: relative;
-    display: inline-block;
-}
-
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #e36d1b;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-}
-
-.dropdown-content a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-}
-
-.dropdown-content a:hover {background-color: #496161;}
-
-.dropdown:hover .dropdown-content {display: block;}
-
-.dropdown:hover .dropbtn {background-color: #496161;}
-/* CUSTOMIZE THE NAVBAR
--------------------------------------------------- */
-
-/* Special class on .container surrounding .navbar, used for positioning it into place. */
 
 /* Carousel styles */
+div#myCarousel.carousel.slide {
+  margin-right: auto;
+  margin-left: auto;
+}
 .carousel {
-  height: 500px;
-  margin-bottom: 60px;
+  height: 600px;
+  margin: 0 auto;
 }
 .carousel-caption {
   z-index: 10;
-  text-shadow: 2px 2px #000000;
+  text-shadow: 2px 2px #003A5C;
 }
 
 .carousel .item {
   height: 500px;
-  background-color: #777;
+  background-color: #AAAD00;
 }
 .carousel-inner > .item > img {
   position: absolute;
   top: 0;
   left: 0;
-  min-width: 100%;
-  height: 500px;
+  min-width: 75%;
+  height: 700px;
 }
-
 .btn.btn-lg.btn-primary {
-	background-color: #e36d1b;
+	background-color: #AAAD00;
 }
 .btn.btn-secondary {
-	background-color: #e36d1b;
+	background-color: #AAAD00;
 }
+a.btn.btn-secondary {
+  justify-content: left;
+}
+
 
 /* marketing content */
 
@@ -114,10 +88,19 @@ header {
  div.container.marketing {
 	 margin-bottom: 10px;
  }
+ div.col-lg-4 {
+align-content: left;
+ }
+p             {
+   text-align: left;
+ }
+ul li {
+   font-size: 26px;
+   text-align: left;
+ }
 
 /* Featurettes
 ------------------------- */
-
 .featurette-divider {
   margin: 80px 0; /* Space out the Bootstrap <hr> more */
 }
@@ -129,9 +112,198 @@ header {
   letter-spacing: -1px;
 }
 /*footer styles*/
+footer {
+    position:static;
+    bottom: 0;
+    background: #003A5C;
+    width:  100%;
+    font-family: 'Open Sans', sans-serif;
+    color: #FFFFFF;
+    padding: 20px;
+}
+div.socialIcons {
+  margin-left: 900px;
+  margin-bottom: -150px;
+  z-index: 10;
+}
 
-.page-footer {
- background-color: #002533;
+/***************************((((( Club Page styles )))))**************************/
+div.clubs{
+width: 100%;
+height: 350px;
+background-color: white;
+border: 1px solid black;
+color: black;
+padding: 40px;
+float: left;
+}
+div.clubs img {
+padding: 10px;
+}
+
+/**********************(((((  Projects Page styles ))))****************************/
+div.code{
+  width: 1000px;
+  float: center;
+  margin: auto;
+}
+div.code img{
+  width: 1000px;
+}
+
+div.computer{
+  width: 1000px;
+  float: center;
+  margin: auto;
+}
+div.computer img{
+  width: 1000px;
+}
+div.maker{
+  width: 1000px;
+  float: center;
+  margin: auto;
+}
+div.maker img{
+  width: 1000px;
+}
+div.cyberSec{
+  float: center;
+  margin: auto;
+}
+.maker.responsive{
+  width:100%;
+  height:auto;
+}
+
+.btn {
+    background-color: #003A5C;
+    border: none;
+    color: white;
+    padding: 12px 30px;
+    cursor: pointer;
+    font-size: 20px;
+}
+.btn:hover {
+    background-color: #AAAD00;
+}
+
+
+/*************************((((  Events Page Styles ))))*****************************/
+
+.agenda {
+border: 1px solid black;
+ }
+
+/* Dates */
+.agenda .agenda-date { width: 170px; }
+.agenda .agenda-time {
+	width: 170px;
+	color: black;
+	}
+/*header styles*/
+header {
+	background-color:#003A5C;
+}
+
+th {
+	color: black;
+}
+.agenda .agenda-date .dayofmonth {
+  width: 40px;
+  font-size: 36px;
+	color: #AAAD00;
+  line-height: 36px;
+  float: left;
+  text-align: left;
+  margin-right: 10px;
+  padding-top: 10px;
+}
+.agenda .agenda-date .shortdate {
+  font-size: 1.5em;
+  color: black;
+  float: center;
+
+  padding-bottom: 10px;
+}
+
+.agenda .agenda-date .dayofweek {
+  width: 60px;
+  font-size: 22px;
+  color: black;
+  line-height: 36px;
+  float: left;
+  text-align: left;
+  margin-right: 10px;
+  padding-top: 30px;
+}
+
+/* times */
+.agenda .agenda-time { width: 140px; }
+
+
+/* events */
+.agenda .agenda-events {
+background-color: #white;
+	}
+.agenda .agenda-events .agenda-event {  }
+ div.alert.alert-warning{
+	background-color: #BDBC3E;
+	color: white;
+	text-align: center;
+	margin-bottom: 50px;
+ }
+
+ /*ticker*/
+
+ @keyframes ticker {
+    0% { transform: translate3d(0, 0, 0); }
+    100% { transform: translate3d(-100%, 0, 0); }
+  }
+  .tcontainer{
+	margin-top: 100px;
+    width: 100%;
+    overflow: hidden;
+	background-color: #003A5C;
+  }
+  .ticker-wrap {
+    width: 100%;
+    padding-left: 100%;
+    background-color: #BDBC3E;
+  }
+  .ticker-move {
+    display: inline-block;
+    white-space: nowrap;
+    padding-right: 100%;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-name: ticker;
+    animation-duration: 10s;
+  }
+  .ticker-move:hover{
+    animation-play-state: paused;
+  }
+  div.ticker-item{
+	font-family:courier new;
+	color: #003A5C;
+	font-size: 36px;
+    display: inline-block;
+    padding: 0 2rem;
+	z-index: 10;
+
+  }
+ .UpInfo {
+	 position: relative;
+	 display: block;
+	 color:black;
+	 font-size: 14px;
+	 padding-top: 60px;
+	 padding-left: 40px;
+	 padding-right: 40px;
+ }
+
+@media (max-width: 767px) {
+
 }
 /* RESPONSIVE CSS
 -------------------------------------------------- */
